@@ -4,6 +4,8 @@ const Sequelize = require('sequelize');
 // does not have to be saved to a variable
 require('dotenv').config();
 
+let sequelize;
+
 // create connection to our db
 if (process.env.JAWSDB_URL) {
   sequelize = new Sequelize(process.env.JAWSDB_URL);
